@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topo-container">TELA DE CADASTRO</div>
+        <div class="body-container">
+            <p class="sku">
+                <label for="inCodigo">Código SKU:</label>
+                <input type="text" name="inCodigo" id="inCodigo" disabled="" placeholder="A00AA0000">
+            </p>
+            <p class="empresa">
+                <input type="radio" name="rdEmpresa" id="rdEmpresaE" value="E">
+                <label for="rdEmpresaE">ESSENZA</label>
+                <input type="radio" name="rdEmpresa" id="rdEmpresaC" value="C">
+                <label for="rdEmpresaC">CUBE</label>
+            </p>
+            <p class="descricao">
+                <label for="inDescricao">Descricão do Produto:</label>
+                <input type="text" name="inDescricao" id="inDescricao">
+            </p>
+            <div class="campos">
+                <div class="classe">
+                    <label for="inClasse">Classe do Item:</label>
+                    <select name="inClasse" id="inClasse">
+                        <option value="" data-default disabled selected></option>
+                        <option value="01">MATERIA PRIMA</option>
+                        <option value="02">EMBALAGEM</option>
+                        <option value="03">PRODUTO EM PROCESSO</option>
+                        <option value="04">PRODUTO ACABADO</option>
+                        <option value="05">SUBPRODUTO</option>
+                        <option value="06">PRODUTO INTERMEDIARIO</option>
+                        <option value="07">MATERIAL CONSUMO</option>
+                    </select>
+                </div>
+                <div class="tipo">
+                    <label for="inTipo">Tipo do Item:</label>
+                    <select name="inTipo" id="inTipo">
+                        <option value="" data-default disabled selected></option>
+                        <option value="AD">ADESIVOS E ROTULOS </option>
+                        <option value="AG">AGENDA OU PLANNER </option>
+                        <option value="AP">AGUA PERFUMADA </option>
+                        <option value="AR">AROMATIZADOR DE AMBIENTE </option>
+                        <option value="BD">BANDEJAS </option>
+                        <option value="CX">CAIXA </option>
+                        <option value="CL">CALENDARIO </option>
+                        <option value="CA">CARDÁPIOS </option>
+                        <option value="CT">CARTÃO OU SIMILAR </option>
+                        <option value="CO">CONVITES </option>
+                        <option value="CD">CORDÃO E FIOS EM GERAL </option>
+                        <option value="CV">CORTE E/OU VINCO </option>
+                        <option value="DV">DIVERSOS </option>
+                        <option value="EF">ENFEITES </option>
+                        <option value="ES">ESSENCIA </option>
+                        <option value="FT">FITA DUPLA FACE OU CREPE </option>
+                        <option value="FI">FITAS </option>
+                        <option value="FO">FOTOGRAFIA </option>
+                        <option value="PE">FRASCOS DE PET </option>
+                        <option value="VD">FRASCOS DE VIDRO </option>
+                        <option value="HS">HOME SPRAY </option>
+                        <option value="IM">IMPRESSÃO </option>
+                        <option value="LF">LAMINAÇÃO A FRIO </option>
+                        <option value="LQ">LAMINAÇÃO A QUENTE </option>
+                        <option value="LP">LIQUIDO PARA AGUA PERFUMADA </option>
+                        <option value="LA">LIQUIDO PARA AROMATIZADOR </option>
+                        <option value="LH">LIQUIDO PARA HOME SPRAY </option>
+                        <option value="PA">PAPEL ADESIVO </option>
+                        <option value="PC">PAPEL COLOR PLUS </option>
+                        <option value="PG">PAPEL GLOSSY </option>
+                        <option value="PK">PAPEL KRAFT </option>
+                        <option value="PL">PAPEL LAMICOTE </option>
+                        <option value="PM">PAPEL MATTE </option>
+                        <option value="PO">PAPEL OFFSET </option>
+                        <option value="PV">PAVIO E ACESSÓRIOS </option>
+                        <option value="PD">PEDRARIAS E PEROLAS </option>
+                        <option value="QM">PRODUTOS QUÍMICOS EM GERAL </option>
+                        <option value="RA">REFIL PARA AROMATIZADOR </option>
+                        <option value="RS">REFIL PARA SABONETE </option>
+                        <option value="SB">SABONETE EM BARRA </option>
+                        <option value="SL">SABONETE LÍQUIDO </option>
+                        <option value="SC">SACOLAS </option>
+                        <option value="TG">TAG </option>
+                        <option value="TP">TAMPAS </option>
+                        <option value="VA">VALVULAS </option>
+                        <option value="VR">VARETAS </option>
+                        <option value="VL">VELAS AROMATICAS </option>
+                        <option value="WO">WIRE-O </option>
+
+                    </select>
+                </div>
+
+                <div class="unidade">
+                    <label for="inUnidade">Un. Medida:</label>
+                    <select name="inUnidade" id="inUnidade">
+                        <option value="" data-default disabled selected></option>
+                        <option value="CJ">CJ</option>
+                        <option value="CM">CM</option>
+                        <option value="CX">CX</option>
+                        <option value="FL">FL</option>
+                        <option value="G">G</option>
+                        <option value="KG">KG</option>
+                        <option value="L">L</option>
+                        <option value="LT">LT</option>
+                        <option value="M">M</option>
+                        <option value="M2">M2</option>
+                        <option value="ML">ML</option>
+                        <option value="PC">PC</option>
+                    </select>
+                </div>
+
+                <div class="valor">
+                    <label for="inValor">Valor Unitário:</label>
+                    <input type="select" name="inValor" id="inValor" value="0.0000">
+                </div>
+            </div>
+            <div class="botao">
+                <input type="button" id="btnCadastrar" value="Cadastrar" disabled="">
+            </div>
+        </div>
+    </div>
+
+    <div class="top-tabela">
+        <span class="cCod">Cod SKU</span>
+        <span class="cEmpresa">#</span>
+        <span class="cDescricao">Descricao</span>
+        <span class="cClasse">CL</span>
+        <span class="cTipo">TP</span>
+        <span class="cUnidade">UM</span>
+        <span class="cValor">R$ Unit</span>
+    </div>
+    <div class="tabela"></div>
+    <div class="lista">
+        <input id="cp-01" class="cp-01" type="button" value="C01PO0004">
+        <input id="cp-02" class="cp-02" type="button" value="PAPEL OFFSET BRANCO 90G">
+        <input id="cp-03" class="cp-03" type="button" value="1.0000">
+        <input id="cp-04" class="cp-04" type="button" value="0.0886">
+        <input id="edit" class="edit" type="button" value="📝">
+        <input id="ok" class="ok" type="button" value="✅">
+    </div>
+    <div class="lista">
+        <input id="cp-01" class="cp-01" type="button" value="C01PO0004">
+        <input id="cp-02" class="cp-02" type="button" value="PAPEL OFFSET BRANCO 90G">
+        <input id="cp-03" class="cp-03" type="button" value="1.0000">
+        <input id="cp-04" class="cp-04" type="button" value="0.0886">
+        <input id="edit" class="edit" type="button" value="📝">
+        <input id="ok" class="ok" type="button" value="✅">
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

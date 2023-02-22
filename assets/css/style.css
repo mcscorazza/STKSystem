@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-tabela {
+    width:600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+
+}
+
+.tabela {
+    width:600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.8em;
+    border-bottom: 1px solid #333;
+}
+
+.cCod {
+    width: 70px;
+}
+.cEmpresa {
+    width: 20px;
+    text-align: center;
+}
+.cDescricao {
+    width: 350px;
+}
+.cClasse {
+    width: 20px;
+    text-align: center;
+}
+.cTipo {
+    width: 20px;
+    text-align: center;
+}
+.cUnidade {
+    width: 20px;
+    text-align: center;
+}
+.cValor {
+    width: 60px;
+    text-align: right;
+}
+
+
+.tabela div {
+    width: 100%;
+    padding: 5px 0;
+    border-top: 1px dashed #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width:600px;
+    min-height: 100px;
+    margin: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.topo-container {
+    width: 100%;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.body-container p {
+    height: 50px;
+}
+
+.body-container p.sku input {
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.body-container p.sku label, .body-container p.descricao label, .body-container p.campos label  {
+    display: block;
+    font-size: 0.7rem;
+}
+
+.body-container p.sku {
+    width: 55%;
+}
+
+.body-container p.empresa {
+    width: 45%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.body-container p.empresa label {
+    margin: 15px;
+    font-weight: 500;
+}
+
+.body-container p.descricao {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.body-container p.descricao input {
+    width: 100%;
+    min-height: 25px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.campos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.campos div {
+    margin-top: 10px;
+}
+
+.classe {
+    width: 30%;
+}
+.tipo {
+    width:40%;
+}
+
+.unidade {
+    width: 12%;
+}
+
+.valor {
+    width: 15%;
+}
+
+.valor input {
+
+    font-weight: 700;
+}
+
+.campos label {
+    display: block;
+    font-size: 0.7rem;
+}
+.campos select, .campos input  {
+    width: 100%;
+    min-height: 25px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.campos select {
+    font-size: 0.8em;
+}
+
+.campos input {
+    text-align: right;
+    padding: 5px;
+}
+
+.botao {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+    
+}
+
+.botao input {
+    min-height: 50px;
+    width: 180px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.lista input[type=button] {
+    border: none;
+    background: none;
+    outline: none;
+    height: 30px;
+    color:#666;
+    font-stretch: extra-condensed;
+}
+
+.lista input[type=text] {
+    background: #fffcd9;
+    height: 20px;
+    color:#666;
+    font-stretch: extra-condensed;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.lista .cp-01 {
+    width: 80px;
+    padding: 4px;
+}
+.lista .cp-03, .cp-04 {
+    width: 60px;
+    padding: 4px;
+}
+.lista .cp-03, .cp-04 {
+    text-align: right;
+}
+.lista .cp-01, .cp-02 {
+    text-align: left;
+}
+
+.lista .cp-02 {
+    width: 360px;
+    padding: 4px;
+}
+
+.lista .edit {
+    width: 30px;
+    cursor:pointer;
+}
+
+.lista .ok {
+    width: 30px;
+    cursor:pointer;
+    display: none;
+}
