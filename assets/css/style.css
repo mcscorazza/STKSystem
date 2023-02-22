@@ -237,7 +237,7 @@ body {
 .lista input[type=text] {
     background: #fffcd9;
     height: 20px;
-    color:#666;
+    color:red;
     font-stretch: extra-condensed;
     outline: none;
     border-radius: 2px;
